@@ -1,25 +1,25 @@
 <%= form_with(model: @blog, local: true) do |form| %>
   <% if @blog.errors.any? %>
     <div id="error_explanation">
-      <h2><%= @blog.errors.count %>件のエラーがあります。</h2>
-      <ul>
-
-      <% @blog.errors.full_messages.each do |msg| %>
-        <li><%= msg %></li>
-      <% end %>
+      <ul class="row">
+        <% @blog.errors.full_messages.each do |msg| %>
+          <li class="col-xs-offset-2 col-sm-offset-3 col-md-offset-4"><%= msg %></li>
+        <% end %>
       </ul>
     </div>
   <% end %>
-
-  <div class="blog_title">
-    <%= form.label :title %>
-    <%= form.text_field :title %>
+  <div class="row input-title">
+    <%= form.label :title, class:'col-xs-1 col-xs-offset-2' %>
+    <%= form.text_field :title, class:'col-xs-7 blog-input' %>
   </div>
-  <div class="blog_title">
-    <%= form.label :content %>
-    <%= form.text_field :content %>
+  <div class="row input-content">
+    <%= form.label :content, class:'col-xs-1 col-xs-offset-2' %>
+    <%= form.text_field :content, class:'col-xs-7 blog-input' %>
   </div>
-  <%= form.submit %>
+  <div class="link-button">
+    <%= form.submit "作成", class: 'btn btn-default' %>
+  </div>
 <% end %>
-
-<%= link_to "ブログ一覧画面にもどる", blogs_path %>
+<div class="link-button">
+  <%= link_to "一覧", blogs_path, class: 'btn btn-default' %>
+</div>

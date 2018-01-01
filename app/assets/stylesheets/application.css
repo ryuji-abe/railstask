@@ -10,6 +10,70 @@
  * files in this directory. Styles in this file should be added after the last require_* statement.
  * It is generally better to create a new file per style scope.
  *
+ *= require bootstrap/dist/css/bootstrap.min
  *= require_tree .
  *= require_self
  */
+
+ html {
+   position: relative;
+   min-height: 100%;
+ }
+
+ body {
+   background-color: #eee;
+   color: #333;
+ }
+
+ .contents{
+   background-color: #fff;
+   border: solid 1px #ccc;
+   margin-bottom: 20px;
+   padding:20px;
+ }
+
+ .contents p{
+   text-align: center;
+ }
+
+.blog-title{
+  padding-bottom: 10px;
+}
+
+ h1 {
+  font-size: 24px;
+  padding:0;
+  text-align: center;
+}
+
+.blog-content{
+  border-top: dotted 1px #ccc;
+  padding: 10px;
+  word-break: break-all;
+}
+
+.blog-button{
+  padding: 10px 0 10px 20px;
+}
+
+.blog-input{
+  height: 50px;
+  margin-top: 15px;
+}
+
+.input-title,
+.input-content{
+  margin:15px 0;
+}
+
+.link-button{
+  margin-top:15px;
+  text-align: center;
+}
+
+ .footer{
+   text-align: center;
+   background-color: #222;
+   color:#fff;
+   padding: 15px 0px;
+ }

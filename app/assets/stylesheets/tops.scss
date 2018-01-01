@@ -1,3 +1,21 @@
-// Place all the styles related to the tops controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+.top_p{
+  text-align: center;
+  padding: 15px 0px;
+}
+
+.image-pc{
+  display: block !important;
+  text-align: center;
+  max-width: 100%;
+}
+
+.image-sp{
+  display: none !important;
+  text-align: center;
+  max-width: 100%;
+}
+
+@media only screen and (max-width: 750px) {
+.image-pc { display: none !important; }
+.image-sp { display: block !important; }
+}
