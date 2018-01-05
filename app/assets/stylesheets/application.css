@@ -16,13 +16,14 @@
  */
 
  html {
-   position: relative;
    min-height: 100%;
+   position: relative;
  }
 
  body {
    background-color: #eee;
    color: #333;
+   margin-bottom:60px;
  }
 
  .contents{
@@ -75,5 +76,9 @@
    text-align: center;
    background-color: #222;
    color:#fff;
-   padding: 15px 0px;
+   padding: 15px;
+   position: absolute;
+   width: 100%;
+   height:60px;
+   bottom:0;
  }
