@@ -1,6 +1,7 @@
 <div class="contents">
   <h1>ログイン</h1>
   <p class="alert-info"><%= notice %></p>
+  <p class="alert-danger"><%= danger %></p>
   <%= form_with(scope: :session, url: sessions_path) do |f| %>
     <div class="row input-user-info">
       <%= f.label :email, class:'col-xs-2 col-xs-offset-1' %>

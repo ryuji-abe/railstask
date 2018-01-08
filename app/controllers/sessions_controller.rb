@@ -10,7 +10,7 @@ class SessionsController < ApplicationController
         redirect_to blogs_path
       else
         flash[:danger] = 'ログインに失敗しました'
-        render 'new'
+        redirect_to new_session_path
       end
   end
 
