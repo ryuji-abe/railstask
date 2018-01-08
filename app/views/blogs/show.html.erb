@@ -1,0 +1,14 @@
+<div class="contents">
+  <h1>ブログ詳細画面</h1>
+  <div class="row blog-info">
+    <div class="col-xs-1 col-xs-offset-2">タイトル:</div>
+    <div class="col-xs-7"><%= @blog.title %></div>
+  </div>
+  <div class="row blog-info">
+    <div class="col-xs-1 col-xs-offset-2">内容:</div>
+    <div class="col-xs-7"><%= @blog.content %></div>
+  </div>
+  <div class="link-button">
+    <%= link_to "一覧", blogs_path, class: 'btn btn-default' %>
+  </div>
+</div>

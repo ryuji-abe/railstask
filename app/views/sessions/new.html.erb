@@ -1,0 +1,17 @@
+<div class="contents">
+  <h1>ログイン</h1>
+  <p class="alert-info"><%= notice %></p>
+  <%= form_with(scope: :session, url: sessions_path) do |f| %>
+    <div class="row input-user-info">
+      <%= f.label :email, class:'col-xs-2 col-xs-offset-1' %>
+      <%= f.email_field :email, class:'col-xs-7 user-input' %>
+    </div>
+    <div class="row input-user-info">
+      <%= f.label :password, class:'col-xs-2 col-xs-offset-1' %>
+      <%= f.password_field :password, class:'col-xs-7 user-input' %>
+    </div>
+    <div class="link-button">
+      <%= f.submit "ログイン", class:'btn btn-default' %>
+    </div>
+  <% end %>
+</div>

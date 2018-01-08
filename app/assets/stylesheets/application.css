@@ -61,13 +61,16 @@
   padding: 10px 0 10px 20px;
 }
 
-.blog-input{
+.blog-input,
+.user-input{
   height: 50px;
   margin-top: 15px;
 }
 
 .input-title,
-.input-content{
+.input-content,
+.input-user-info,
+.blog-info{
   margin:15px 0;
 }
 
