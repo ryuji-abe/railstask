@@ -16,6 +16,11 @@
     <%= form.label :content, class:'col-xs-1 col-xs-offset-2' %>
     <%= form.text_field :content, class:'col-xs-7 blog-input' %>
   </div>
+  <div class="field row input-content">
+    <%= form.label :image, class:'col-xs-1 col-xs-offset-2' %>
+    <%= form.file_field :image, id: :feed_image, class:'col-xs-7 blog-input' %>
+    <%= form.hidden_field :image_cache %>
+  </div>
   <div class="link-button">
     <%= form.submit "作成", class: 'btn btn-default' %>
   </div>

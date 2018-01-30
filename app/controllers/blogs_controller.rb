@@ -28,7 +28,7 @@ class BlogsController < ApplicationController
   def update
     @blog = Blog.find(params[:id])
     if @blog.update(blog_params)
-      redirect_to blogs_path, notice:"ブログを更新しました！"
+      redirect_to blogs_path, notice: 'ブログを更新しました'
     else
       render 'edit'
     end
@@ -36,7 +36,7 @@ class BlogsController < ApplicationController
 
   def destroy
     @blog.destroy
-    redirect_to blogs_path, notice:"ブログを削除しました！"
+    redirect_to blogs_path, notice: 'ブログを削除しました'
   end
 
   def show
@@ -46,7 +46,7 @@ class BlogsController < ApplicationController
 
   private
   def blog_params
-    params.require(:blog).permit(:title, :content)
+    params.require(:blog).permit(:title, :content, :image)
   end
 
   def set_blog

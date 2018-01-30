@@ -28,6 +28,11 @@
       <%= f.label :password_confirmation, class:'col-xs-4' %>
       <%= f.password_field :password_confirmation, class:'col-xs-6 user-input' %>
     </div>
+    <div class="row field input-user-info">
+      <%= f.label :image, class:'col-xs-4'  %>
+      <%= f.file_field :image, id: :feed_image, class:'col-xs-6 user-input'  %>
+      <%= f.hidden_field :image_cache %>
+    </div>
     <div class="link-button">
       <%= f.submit "ユーザー登録", class: 'btn btn-default' %>
     </div>
